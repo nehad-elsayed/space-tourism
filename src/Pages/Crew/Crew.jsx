@@ -62,7 +62,6 @@ export default function Crew() {
             key={index}
             className="flex flex-col display  lgg:flex-row  items-center gap-8 lgg:gap-0"
           >
-            {/* Text Section */}
             <div className="text-center content md:text-right md:w-1/2">
               <h3 className="uppercase center text-gray-400 text-[13px]  mb-2">
                 {crew.role}
@@ -75,7 +74,6 @@ export default function Crew() {
               </p>
             </div>
 
-            {/* Image Section */}
             <div className="md:w-1/2 image flex justify-center">
               <img
                 src={crew.image}
