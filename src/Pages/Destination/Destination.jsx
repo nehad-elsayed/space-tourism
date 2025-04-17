@@ -4,6 +4,7 @@ import img1  from "../../assets/destination/image-moon.png"
 import img2  from "../../assets/destination/image-mars.png"
 import img3 from "../../assets/destination/image-europa.png"
 import img4  from "../../assets/destination/image-titan.png"
+import Loading from "../../Components/Loading/Loading";
 
 const destinations = [
   {
@@ -39,7 +40,11 @@ const destinations = [
 
 export default function Destination() {
   const [selectedIndex, setSelectedIndex] = useState(0);
+const [loading ,setLoading]=useState(false)
 
+if(loading){
+  <Loading/>
+}
   return (
     <section className="des-page min-h-screen pt-20 text-white">
       <div className="max-w-6xl mx-auto px-4 py-10">

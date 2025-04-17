@@ -1,5 +1,14 @@
+import { useState } from "react"
+import Loading from "../../Components/Loading/Loading"
 
 export default function Home() {
+
+const [loading ,setLoading]=useState(false)
+
+if(loading){
+  <Loading/>
+}
+
   return (
     <section
       className="home-page relative min-h-screen bg-cover bg-no-repeat bg-fixed bg-center text-white"

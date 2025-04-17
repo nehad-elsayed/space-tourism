@@ -89,6 +89,7 @@ import img1 from "../../assets/technology/image-launch-vehicle-portrait.jpg";
 import img2 from "../../assets/technology/image-spaceport-portrait.jpg";
 import img3 from "../../assets/technology/image-space-capsule-portrait.jpg";
 import img4 from "../../assets/technology/image-launch-vehicle-landscape.jpg";
+import Loading from "../../Components/Loading/Loading";
 const technologyData = [
   {
     name: "Launch Vehicle",
@@ -113,6 +114,11 @@ const technologyData = [
 export default function Technology() {
   const [index, setIndex] = useState(0);
   const tech = technologyData[index];
+  const [loading ,setLoading]=useState(false)
+  
+  if(loading){
+    <Loading/>
+  }
 
   return (
     <section className="technology-page text-white min-h-screen p-6 md:p-12 flex flex-col-reverse lgg:flex-row items-center justify-center">

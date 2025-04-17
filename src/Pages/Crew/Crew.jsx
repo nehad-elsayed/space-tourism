@@ -1,5 +1,5 @@
 // src/components/CrewSlider.jsx
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,7 @@ import img1 from "../../assets/crew/image-douglas-hurley.png";
 import img2 from "../../assets/crew/image-mark-shuttleworth.png";
 import img3 from "../../assets/crew/image-victor-glover.png";
 import img4 from "../../assets/crew/image-anousheh-ansari.png";
+import Loading from "../../Components/Loading/Loading";
 
 const crewData = [
   {
@@ -48,6 +49,11 @@ export default function Crew() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  const [loading, setLoading] = useState(false);
+
+  if (loading) {
+    <Loading />;
+  }
 
   return (
     <section className="crew-page text-white min-h-screen p-6 md:p-16">
