@@ -48,9 +48,16 @@ body {
     background-attachment: fixed;
 }
 
-.crew-page h2{
-    margin-left:-20px;
-   
+.technology-page {
+    background-image: url("../src/assets/technology/background-technology-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.crew-page h2 {
+    margin-left: -20px;
+
 }
 
 .display {
@@ -58,14 +65,16 @@ body {
     margin-top: 5rem;
     padding: 20px;
 }
+
 .display p {
     font-size: 12px;
 }
 
-.content{
+.content {
     margin-bottom: 10px;
 }
-.content p{
+
+.content p {
     margin-bottom: 20px;
 }
 
@@ -74,7 +83,8 @@ body {
     top: 46%;
     right: 0px;
 }
-.image{
+
+.image {
     position: relative;
     top: 60px;
 }
@@ -87,6 +97,41 @@ body {
 .slick-dots li button::before {
     color: #aea4a4 !important;
     font-size: 1rem !important;
+}
+
+
+.conttent-text {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.just-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.just-text h2 {
+    font-size: 12px;
+}
+
+.just-text h1 {
+    font-size: 15px;
+    margin-block: 15px;
+}
+
+.just-text p {
+    font-size: 14px;
+}
+
+.vehicle {
+    width: 80%;
+    height: 90%;
+    margin-top: 20px;
 }
 
 @media (min-width: 640px) {
@@ -176,12 +221,14 @@ body {
 
 
     }
+
     .slick-dots {
         position: relative;
-        top:42%;
+        top: 42%;
         right: 5px;
     }
-    .image{
+
+    .image {
         position: relative;
         top: 40px;
     }
@@ -225,6 +272,13 @@ body {
         background-attachment: fixed;
     }
 
+    .technology-page {
+        background-image: url("../src/assets/technology/background-technology-tablet.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .center {
         text-align: center;
     }
@@ -244,16 +298,61 @@ body {
         position: relative;
         top: 100px;
     }
+
     .slick-dots {
         position: relative;
         top: 54%;
         right: 5px;
     }
-    .image{
+
+    .image {
         position: relative;
         top: 25px;
     }
 
+    /* final page  */
+
+
+    .just-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .just-text h2 {
+        font-size: 12px;
+    }
+
+    .just-text h1 {
+        font-size: 1.5rem;
+        margin-block: 15px;
+    }
+
+    .just-text p {
+        font-size: 14px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .vehicle {
+        width: 100%;
+        height: 90%;
+        margin-top: 50px;
+    }
+
+    .nums {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .nums button {
+        margin-top: 12px;
+    }
 
 }
 
@@ -290,6 +389,13 @@ body {
         background-attachment: fixed;
     }
 
+    .technology-page {
+        background-image: url("../src/assets/technology/background-technology-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .center {
         text-align: left;
     }
@@ -312,8 +418,9 @@ body {
     .display {
         position: relative;
         top: 0;
-       
+
     }
+
     .content {
         position: relative;
         left: 50px;
@@ -324,12 +431,67 @@ body {
         top: 100%;
         right: 20px;
     }
-    .image{
+
+    .image {
         position: relative;
         top: 0px;
     }
-    .crew-page h2{
+
+    .crew-page h2 {
         margin-left: 43px;
     }
+
+
+
+    .conttent-text {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        text-align: start;
+        width: 50%;
+    }
+
+    .just-text {
+        justify-content: left;
+        text-align: start;
+    }
+
+    .just-text h1 {
+        font-size: 2.25rem;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .just-text h2 {
+        font-size: 1rem;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    .just-text p{
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+
+    .vehicle {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        position: relative;
+        right: 20px;
+    }
+
+    .nums {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nums button {
+        margin-left: 10px;
+    }
+
+
 
 }

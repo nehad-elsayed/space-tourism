@@ -78,7 +78,7 @@ export default function Crew() {
               <img
                 src={crew.image}
                 alt={crew.name}
-                className="max-h-[400px] object-contain"
+                className="max-h-[400px] object-cover"
               />
             </div>
           </div>
